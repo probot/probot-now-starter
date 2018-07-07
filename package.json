@@ -1,12 +1,12 @@
 {
-  "name": "template-now-starter",
+  "name": "{{ name }}",
   "version": "1.0.0",
-  "description": "",
-  "author": "tcbyrd <tcbyrd@github.com> (https://probot.github.io)",
+  "description": "{{{ description }}}",
+  "author": "{{{ author }}}",
   "license": "ISC",
-  "repository": "https://github.com/probot/template-now-starter.git",
-  "homepage": "https://github.com/probot/template-now-starter",
-  "bugs": "https://github.com/probot/template-now-starter/issues",
+  "repository": "https://github.com/{{ owner }}/{{ repo }}.git",
+  "homepage": "https://github.com/{{ owner }}/{{ repo }}",
+  "bugs": "https://github.com/{{ owner }}/{{ repo }}/issues",
   "keywords": [
     "probot",
     "github",
