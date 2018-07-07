@@ -1,0 +1,40 @@
+{
+  "name": "template-now-starter",
+  "version": "1.0.0",
+  "description": "",
+  "author": "tcbyrd <tcbyrd@github.com> (https://probot.github.io)",
+  "license": "ISC",
+  "repository": "https://github.com/probot/template-now-starter.git",
+  "homepage": "https://github.com/probot/template-now-starter",
+  "bugs": "https://github.com/probot/template-now-starter/issues",
+  "keywords": [
+    "probot",
+    "github",
+    "probot-app"
+  ],
+  "scripts": {
+    "dev": "nodemon --exec \"npm start\"",
+    "start": "probot run ./index.js",
+    "now-start": "PRIVATE_KEY=$(echo $PRIVATE_KEY_BASE64 | base64 -d) probot run ./index.js",
+    "lint": "standard --fix",
+    "test": "jest && standard",
+    "test:watch": "jest --watch --notify --notifyMode=change --coverage"
+  },
+  "dependencies": {
+    "probot": "^7.0.0"
+  },
+  "devDependencies": {
+    "jest": "^22.4.3",
+    "nodemon": "^1.17.2",
+    "smee-client": "^1.0.2",
+    "standard": "^10.0.3"
+  },
+  "engines": {
+    "node": ">= 8.3.0"
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  }
+}
