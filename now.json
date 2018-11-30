@@ -3,6 +3,6 @@
     "NODE_ENV": "production",
     "APP_ID": "@app-id",
     "WEBHOOK_SECRET": "@webhook-secret",
-    "PRIVATE_KEY_BASE64": "@private-key-base64"
+    "PRIVATE_KEY": "@private-key-base64"
   }
 }
